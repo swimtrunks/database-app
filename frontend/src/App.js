@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Employee from "./employee";
 import "./App.css";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Register from "./register";
+import Home from "./home";
+
+
+
 
 const App = () => {
   const [employees, setEmployees] = useState([]);
@@ -17,20 +23,42 @@ const App = () => {
   };
 
   return (
-    <div className="App">
+    <Router>
+    <div>
+      <header>
       <h1>mPloy-db</h1>
-      {employees.map((employee) => (
-        <Employee
-          key={employee._id}
-          name={employee.name}
-          image={employee.image}
-          jobtitle={employee.job_title}
-          department={employee.department}
-          email={employee.email_address}
-        />
-        
-      ))}
+      <nav>
+        <a href ="/">Home</a>
+        <a href ="/directory">Directory</a>
+        <a href ="/register">Register </a>
+      </nav>
+      </header>
+      
+      <div className="App">
+       <Switch>
+         <Route exact path="/">
+           <Home />
+         </Route>
+         <Route path="/register">
+          <Register />
+        </Route>
+         <Route path="/directory">
+       {employees.map((employee) => (
+          <Employee
+            key={employee._id}
+            name={employee.name}
+            image={employee.image}
+            jobtitle={employee.job_title}
+            department={employee.department}
+            email={employee.email_address}
+          />
+        ))}
+        </Route>
+       </Switch>
+       
+      </div>
     </div>
+    </Router>
   );
 };
 

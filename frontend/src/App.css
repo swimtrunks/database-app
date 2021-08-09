@@ -1,17 +1,38 @@
 .App {
   text-align: center;
+  margin: auto 0rem;
+  min-width: 350px;
 }
 h4 {
   text-align: left;
-  padding:0px;
+  padding: 0px;
   margin: 0px;
 }
-.employee_data{
-  border: .20rem solid black;
+.employee_data {
+  border: 0.2rem solid black;
   padding: 10px 10px;
   margin: 10px 10px;
 }
-.email{
+.email {
   display: block;
   text-align: left;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  color:white;
+  background-color: black;
+  padding: 10px;
+}
+nav a{
+  display: flex;
+  padding-top: 40px;
+  padding-right: 15px;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+nav{
+  display:flex;
+  flex-direction: row;
 }
