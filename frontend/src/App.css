@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+h4 {
+  text-align: left;
+  padding:0px;
+  margin: 0px;
+}
+.employee_data{
+  border: .20rem solid black;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+.email{
+  display: block;
+  text-align: left;
+}
