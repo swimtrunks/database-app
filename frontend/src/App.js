@@ -5,9 +5,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Register from "./register";
 import Home from "./home";
 
-
-
-
+//get employees from api and display them on page
 const App = () => {
   const [employees, setEmployees] = useState([]);
 
