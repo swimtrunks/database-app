@@ -9,10 +9,10 @@ POST HTTP://localhost:3000/employees
 Content-Type: application/json
 
 {
-    "name": "Daniel Dumile",
-    "department": "Engineering",
+    "name": "DELETE THIS",
+    "department": "DELETE",
     "job_title": "Sr. Software Engineer",
-    "email_address": "maddymcgain@email.com",
+    "email_address": "DELETE@email.com",
     "image": "https://randomuser.me/api/portraits/med/men/75.jpg"
 
 }
