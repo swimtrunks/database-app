@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Employee from "./employee";
 import "./App.css";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Register from "./register";
+import Forms from "./forms";
 import Home from "./home";
 
 //get employees from api and display them on page
@@ -28,7 +28,7 @@ const App = () => {
       <nav>
         <a href ="/">Home</a>
         <a href ="/directory">Directory</a>
-        <a href ="/register">Register </a>
+        <a href ="/forms">Forms </a>
       </nav>
       </header>
       
@@ -37,8 +37,8 @@ const App = () => {
          <Route exact path="/">
            <Home />
          </Route>
-         <Route path="/register">
-          <Register />
+         <Route path="/forms">
+          <Forms />
         </Route>
          <Route path="/directory">
        {employees.map((employee) => (
