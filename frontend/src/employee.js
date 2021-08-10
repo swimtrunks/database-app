@@ -6,8 +6,8 @@ const Employee = ({name,image,department,jobtitle,email}) => {
             <img src= {image} alt="employee"></img><br />
             <h4>{name}</h4>
             <span className="email">{email}</span>
-            
-            <span>{jobtitle} </span>
+            <span>{jobtitle} : {department}</span>
+
         </div>
     )
 }
