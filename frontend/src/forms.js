@@ -60,6 +60,7 @@ export default function Forms() {
     fetch(`http://localhost:3000/employees/${data.id}`, deleteMethod)
     .then(response=>response.json())
     .then(response=>console.log(response))
+    .then(reset())
   }
   return(
     <div>
