@@ -3,7 +3,7 @@ const router = express.Router()
 const Employee_data = require('../models/employee')
 
 
-//---restful endpoints
+
 
 //get all
 router.get('/', async (request, response )=>{
@@ -71,6 +71,7 @@ router.delete('/:id',findEmployee, async(request, response )=>{
         response.status(500).json({message : error.message})
     }
 })
+
 
 
 //middleware function 
