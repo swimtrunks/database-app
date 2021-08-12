@@ -1,6 +1,6 @@
 # take home assessment
 <p align="center">
-<img src="https://user-images.githubusercontent.com/25188844/129264495-bc9d317d-f6e7-48e2-892b-ee336d964b60.png" width="60%">
+<img src="https://user-images.githubusercontent.com/25188844/129267229-a2aec4a7-dc3a-426c-ba6e-f4d36cc00dde.png" width="60%">
 </p>
  
 This is a website that I built for a take home project. The assignment was to build both the front-end and back-end utilizing modern tools. The goal for the website was to be able to display employee data on screen from the database. I did design a quick logo (3 variants along with on of them having a graphic) and to made it responsive with Flexbox. If the site was larger or had more going on I would have probably opted for CSS Grid. 
