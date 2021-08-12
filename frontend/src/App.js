@@ -44,6 +44,7 @@ const App = () => {
        {employees.map((employee) => (
           <Employee
             key={employee._id}
+            id={employee._id}
             name={employee.name}
             image={employee.image}
             jobtitle={employee.job_title}

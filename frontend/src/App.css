@@ -3,62 +3,63 @@
   margin: auto 0rem;
   min-width: 350px;
 }
+
+/*header*/
 h1 {
   font-family: "Lato", sans-serif;
-  
 }
-.employee_data {
-  border: 0.15rem solid rgb(126, 5, 5);
-  border-radius: 20px;
-  padding: 10px 10px;
-  margin: 10px 10px;
-}
-.email {
-  display: block;
-  
-}
-header{
-  display: flex;
-  justify-content: space-around;
-  color:white;
-  background-color: rgb(121, 13, 13);
-  padding: 10px;
-}
-nav a{
+nav a {
   display: flex;
   padding-top: 40px;
   padding-right: 15px;
   text-decoration: none;
-  color:white;
+  color: white;
   font-weight: bold;
 }
-nav{
-  display:flex;
+nav {
+  display: flex;
   flex-direction: row;
 }
-form{
-  background-color: rgb(236, 236, 236);
-  border-radius: 10px;
-  margin:10px;
-  
+.employee_data {
+  margin: 3rem auto;
+  border: 0.15rem solid rgb(126, 5, 5);
+  max-width: 30rem;
+  border-radius: 20px;
+  padding: 10px 10px;
 }
-
-input{
+.email {
+  display: block;
+}
+header {
   display: flex;
-  margin:auto;
+  justify-content: space-around;
+  color: white;
+  background-color: rgb(121, 13, 13);
   padding: 10px;
 }
 
-button{
+form {
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+input {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+button {
   margin: 10px auto;
 }
 
-select{
-  padding:10px;
-  width:10.6rem;
+select {
+  padding: 10px;
+  width: 10.6rem;
   margin: 5px auto;
 }
 
-h3{
-  padding-top:1rem;
+h3 {
+  padding-top: 1rem;
 }

@@ -11,7 +11,8 @@ export default function Forms() {
       name : `${data.name}`,
       department : `${data.department}`,
       job_title : `${data.job_title}`,
-      email_address : `${data.email_address}`
+      email_address : `${data.email_address}`,
+      image: 'https://winaero.com/blog/wp-content/uploads/2015/05/windows-10-user-account-login-icon.png'
     }
     const postMethod = {
       method:'POST',
