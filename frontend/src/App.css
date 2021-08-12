@@ -3,13 +3,12 @@
   margin: auto 0rem;
   min-width: 350px;
 }
-h4 {
+h1 {
+  font-family: "Lato", sans-serif;
   
-  padding: 0px;
-  margin: 0px;
 }
 .employee_data {
-  border: 0.15rem solid black;
+  border: 0.15rem solid rgb(126, 5, 5);
   border-radius: 20px;
   padding: 10px 10px;
   margin: 10px 10px;
@@ -22,7 +21,7 @@ header{
   display: flex;
   justify-content: space-around;
   color:white;
-  background-color: black;
+  background-color: rgb(121, 13, 13);
   padding: 10px;
 }
 nav a{
