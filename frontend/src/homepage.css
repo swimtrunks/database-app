@@ -1,0 +1,42 @@
+.homeSplash{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.frontImage{
+    width: 38rem;
+    height: auto;
+}
+.frontText{
+    padding-top:12rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    width: 50%;
+    height: auto;
+    line-height: 1.35rem;
+}
+.homeHeading{
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.frontText p{
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 0 2rem;
+}
+.topButton{
+    display: inline-block;
+    background-color: rgb(146, 18, 18);
+    color: white;
+    font-family: "Lato", sans-serif ;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: .8rem;
+    margin:2rem;
+    border-radius: .6rem;
+}
