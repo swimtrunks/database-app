@@ -32,7 +32,14 @@ npm install
 ```
 
 Then hit enter. Navigate to the backend and do the same.
-Once this is done you can move to starting the server. This requires you to be in the backend folder and you can just type in:
+
+To access the database we will need to create a .env file and place it in the backend folder. Once that is done use this as your connection string:
+
+```
+ATLAS_URL = mongodb+srv://new-user:postlight123@mploydb1.4tc0u.mongodb.net/mploydatabase
+```
+
+While we are still in the backend folder, we can move to starting the server:
 
 ```
 npm run devStart
