@@ -64,11 +64,12 @@ After this React should be booting up the webpage in your selected default brows
 This project was really interesting because it gave me an opportunity to have more experience with server-side development. In this regard I used Node.js, Express.js and MongoDB with Mongoose. I went the MERN route because I knew Javascript and wanted to explore what it could do on the back-end. Using Mongoose and Express was also a pleasant surprise as it has many similarities to Node.js in syntax and being able to start writing middleware was also very helpful when working with building the API.
 Working with React is a recent development for me and I wanted to challenge myself further by trying to use it in this project to gain even more familiarity with. It was a challenge going from the traditional HTML, CSS/SASS, Javascript to the MERN stack but dealing with components, React router, JSX and imports turned out to be very helpful. The size of the project was relatively small but if I were to make anymore components I would have definitely started implementing a new folder structure to help with organization and ease of use. 
 
-<h3>WHATS NEXT</h3>
+<h3>UP NEXT</h3>
 
-I will definitely continue to learn more about MongoDB as towards the end of the project I found myself working more with the MongoDB Atlas to get the database on a server other than my local network and Compass that helps with just altering data quickly in its GUI. I will also be working more with React going forward as to learn to take full advantage of its features. I do really like the fact that it’s so fast to load client-side due to useState.
+I will continue to research and learn server-side development and work more with React.
 
-In regards to the actual app itself, I want to work more with implementing a search and filter feature, as well as pagination. I already started working on the filter function utilizing a similar form as the one in “update employee records” and built out a filter to view by “department”. I have this in a test branch and will continue to work on it for the coming days. 
+In regards to the actual app itself, I want to work more with implementing a search and filter feature, as well as pagination. I already started working on the filter function utilizing a similar form as the one in “update employee records” and built out a filter to view by “department”. I have this in a test branch and will continue to work on it for the coming days. I want to implement more form validation as well. I would add the search bar under the nav bar. Maybe even keeping it hidden then using animation to reveal it when a link is clicked in the navbar. I would have added a footer as well with social links and icons. In regards to accessiblity and design I kept it pretty simple but I thikn the text in the employee cards could be a little heavier to imporve readablity.
 
+Overall, I am very happy with the way this project turned out and I learned quite a bit while working on it. I look forward to improving the code and growing my skill base even further. 
 
 
