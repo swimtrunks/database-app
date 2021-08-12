@@ -44,9 +44,13 @@ Then hit enter. Moving on to the frontend folder you just type:
 npm run start
 ```
 
-I always start them in this order because React is more polite and will ask since something is running on port 3000 should it run on something different, just type : y
+I always start them in this order because React is more polite and will ask since something is running on port 3000 should it run on something different, just type : 
 
-After all this React should be booting up the webpage in your selected default browser.
+```
+y
+```
+
+After this React should be booting up the webpage in your selected default browser.
 
 <h3>TECHNOLOGIES</h3>
 
