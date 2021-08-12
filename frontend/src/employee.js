@@ -2,7 +2,7 @@ import React from "react";
 
 const Employee = ({id,name,image,department,jobtitle,email}) => {
     return(
-        <div className="employee_data">
+        <div className="employee_data fade-in">
             <img src= {image} alt="employee"></img><br />
             <h4>{name}</h4>
             <span className="email">{email}</span>

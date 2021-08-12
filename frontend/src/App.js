@@ -4,6 +4,7 @@ import "./App.css";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Forms from "./forms";
 import Home from "./home";
+import whiteLogo from "./stockphotos/whitetext-mploylogo.png"
 
 //get employees from api and display them on page
 const App = () => {
@@ -24,7 +25,7 @@ const App = () => {
     <Router>
     <div>
       <header>
-      <h1>mPloy-db</h1>
+      <img src={whiteLogo} className="headerLogo" alt="mploy logo in white"></img>
       <nav>
         <a href ="/">Home</a>
         <a href ="/directory">Directory</a>
