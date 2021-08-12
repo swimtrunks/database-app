@@ -33,7 +33,7 @@ npm install
 
 Then hit enter. Navigate to the backend and do the same.
 
-To access the database we will need to create a .env file and place it in the backend folder. Once that is done use this as your connection string:
+To access the database we will need to create a .env file and place it in the backend folder. We only need to add the connection string to this file which in this case would be:
 
 ```
 ATLAS_URL = mongodb+srv://new-user:postlight123@mploydb1.4tc0u.mongodb.net/mploydatabase
