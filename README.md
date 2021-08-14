@@ -62,7 +62,7 @@ cd backend
 npm install 
 ```
 
-To access the database we will need to create a .env file and place it in the backend folder root. 
+The database is hosted on the cloud via <a href="https://www.mongodb.com/cloud/atlas/lp/try2?utm_source=google&utm_campaign=gs_footprint_row_search_brand_phrase_intent_test_atlas_desktop&utm_term=mongo&utm_medium=cpc_paid_search&utm_ad=p&utm_ad_campaign_id=11295578158&gclid=CjwKCAjw092IBhAwEiwAxR1lRj_Zk4uxy46SPUxx9xH8rJRmWhyq71_RdZ3qqSKR3-V9y0VinZ4yQBoCfqUQAvD_BwE">Mongo Atlas</a>To access it, create a .env file and place it in the backend folder root. 
 Copy and past the following connection string into that file and save it. (I have included the username and password in the string for ease of use)
 
 ```
