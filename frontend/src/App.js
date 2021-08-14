@@ -61,29 +61,29 @@ const App = () => {
           </Switch>
         </div>
         <footer>
-        <img src={whiteLogo} />
+        <img src={whiteLogo} alt="white version of logo in footer" />
         
           <section>
             <div>Our Company</div>
-            <a href="">Home</a>
-            <a href="">Reviews</a>
-            <a href="">Sign Up</a>
-            <a href="">About Us</a>
-            <a href="">Contact Us</a>
-            <a href="">Free Trail</a>
+            <a href="/home" alt="dummy link">Home</a>
+            <a href="/home" alt="dummy link">Reviews</a>
+            <a href="/home" alt="dummy link">Sign Up</a>
+            <a href="/home" alt="dummy link">About Us</a>
+            <a href="/home" alt="dummy link">Contact Us</a>
+            <a href="/home" alt="dummy link">Free Trail</a>
           </section>
           <section>
           <div>Legal</div>
-          <a href="">Privacy Agreement</a>
-          <a href="">Terms of Service</a>
-          <a href="">Business Terms of Service</a>
+          <a href="/home" alt="dummy link">Privacy Agreement</a>
+          <a href="/home" alt="dummy link">Terms of Service</a>
+          <a href="/home" alt="dummy link">Business Terms of Service</a>
           </section>
           <section>
             <div>Learn</div>
-            <a href="">Blog</a>
-            <a href="">API</a>
-            <a href="">Training</a>
-            <a href="">FAQ</a>
+            <a href="/home" alt="dummy link">Blog</a>
+            <a href="/home" alt="dummy link">API</a>
+            <a href="/home" alt="dummy link">Training</a>
+            <a href="/home" alt="dummy link">FAQ</a>
           </section>
         </footer>
       </div>
