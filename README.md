@@ -22,8 +22,6 @@ I implemented a most of the suggested features from the criteria such as:
 https://user-images.githubusercontent.com/25188844/129264216-c8237d88-df2e-4062-821e-75c560d2d188.mp4
 
 
-I separated the project into 2 folders: frontend & backend. There are two start scripts to get both the server and client up and running. 
-
 <h3>Getting Started:</h3>
 
 <h4>Technologies Used:</h4><br />
