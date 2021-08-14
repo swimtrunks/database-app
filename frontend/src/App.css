@@ -90,6 +90,41 @@ h3 {
   padding-top: 1rem;
 }
 
+/*footer style*/
+footer{
+  background-color: rgb(121, 13, 13) ;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top:3rem;
+  padding-bottom: 5rem;
+}
+
+footer section{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+footer section div{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+footer section a{
+  color:white;
+  text-decoration: none;
+}
+footer section a:hover{
+  color:rgb(233, 193, 186)
+}
+footer img{
+  height: 5rem;
+  display: inline;
+  width: 10rem;
+}
+
+
 
 /*mobile styles*/
 @media only screen and (max-width: 1250px){
