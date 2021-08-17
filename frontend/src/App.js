@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Forms from "./forms";
 import Home from "./home";
 import whiteLogo from "./stockphotos/whitetext-mploylogo.png";
+import Search from "./search";
 
 //get employees from api and display them on page
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
             <a href="/">Home</a>
             <a href="/directory">Directory</a>
             <a href="/forms">Forms </a>
+            <a href="/search">Search(Beta)</a>
           </nav>
         </header>
 
@@ -46,6 +48,7 @@ const App = () => {
               <Forms />
             </Route>
             <Route path="/directory">
+            
               {employees.map((employee) => (
                 <Employee
                   key={employee._id}
@@ -58,6 +61,9 @@ const App = () => {
                 />
               ))}
             </Route>
+            <Route path= "/search">
+              <Search />
+            </Route>
           </Switch>
         </div>
         <footer>
@@ -65,25 +71,25 @@ const App = () => {
         
           <section>
             <div>Our Company</div>
-            <a href="/home" alt="dummy link">Home</a>
-            <a href="/home" alt="dummy link">Reviews</a>
-            <a href="/home" alt="dummy link">Sign Up</a>
-            <a href="/home" alt="dummy link">About Us</a>
-            <a href="/home" alt="dummy link">Contact Us</a>
-            <a href="/home" alt="dummy link">Free Trail</a>
+            <a href="/" alt="dummy link">Home</a>
+            <a href="/" alt="dummy link">Reviews</a>
+            <a href="/" alt="dummy link">Sign Up</a>
+            <a href="/" alt="dummy link">About Us</a>
+            <a href="/" alt="dummy link">Contact Us</a>
+            <a href="/" alt="dummy link">Free Trail</a>
           </section>
           <section>
           <div>Legal</div>
-          <a href="/home" alt="dummy link">Privacy Agreement</a>
-          <a href="/home" alt="dummy link">Terms of Service</a>
-          <a href="/home" alt="dummy link">Business Terms of Service</a>
+          <a href="/" alt="dummy link">Privacy Agreement</a>
+          <a href="/" alt="dummy link">Terms of Service</a>
+          <a href="/" alt="dummy link">Business Terms of Service</a>
           </section>
           <section>
             <div>Learn</div>
-            <a href="/home" alt="dummy link">Blog</a>
-            <a href="/home" alt="dummy link">API</a>
-            <a href="/home" alt="dummy link">Training</a>
-            <a href="/home" alt="dummy link">FAQ</a>
+            <a href="/" alt="dummy link">Blog</a>
+            <a href="/" alt="dummy link">API</a>
+            <a href="/" alt="dummy link">Training</a>
+            <a href="/" alt="dummy link">FAQ</a>
           </section>
         </footer>
       </div>
