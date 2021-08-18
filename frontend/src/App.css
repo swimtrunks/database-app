@@ -125,7 +125,9 @@ footer img{
 }
 
 /*pagination */
-
+.pagination{
+  margin-right: 2rem;
+}
 .page-item{
   list-style-type: none;
   display: inline-block;
