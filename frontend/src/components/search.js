@@ -40,7 +40,7 @@ const Search = () => {
         </button>
       </form>
 
-      <Employee employees={currentCards} loading={loading} />
+      <Employee employees={currentCards} loading={loading} key={employees._id} />
       <Pagination
         cardsPerPage={cardsPerPage}
         totalCards={employees.length}
