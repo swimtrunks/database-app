@@ -1,8 +1,9 @@
 import React from "react";
+import blackLogo from "../stockphotos/blacktext-mploylogo.png"
 
 const Employee2 = ({employees,loading,key}) => {
     if(loading){
-        return <h2>Loading.</h2>
+        return <img className="loadingLogo" src={blackLogo} alt="black logo"/>
      }
 
     return(

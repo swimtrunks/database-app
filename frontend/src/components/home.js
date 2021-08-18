@@ -1,4 +1,4 @@
-import firstImage from "./stockphotos/ladylaptop.jpeg";
+import firstImage from "../stockphotos/ladylaptop.jpeg";
 
 import "./homepage.css";
 

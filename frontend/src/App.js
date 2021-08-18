@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Employee from "./employee";
+import Employee from "./components/employee";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Forms from "./forms";
-import Home from "./home";
+import Forms from "./components/forms";
+import Home from "./components/home";
 import whiteLogo from "./stockphotos/whitetext-mploylogo.png";
-import Search from "./search";
+import Search from "./components/search";
 
 //get employees from api and display them on page
 const App = () => {
