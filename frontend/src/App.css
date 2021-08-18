@@ -124,6 +124,25 @@ footer img{
   width: 10rem;
 }
 
+/*pagination */
+
+.page-item{
+  list-style-type: none;
+  display: inline-block;
+}
+.page-link{
+  padding: 1rem;
+  border-radius: 10%;
+  margin: .2rem;
+  background-color:rgb(121, 13, 13);
+  color: white;
+  font-size: 1rem;
+  
+}
+.page-link:hover{
+  cursor: pointer;
+}
+
 
 
 /*mobile styles*/
