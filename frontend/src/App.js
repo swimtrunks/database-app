@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState}from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Register from "./components/register";
@@ -6,8 +6,11 @@ import Edit from "./components/editemployee";
 import Home from "./components/home";
 import Search from "./components/search";
 import whiteLogo from "./stockphotos/whitetext-mploylogo.png";
-import menuIcon from "./stockphotos/whitemenuicon.png"
+import menuIcon from "./stockphotos/whitemenuicon.png";
 const App = () => {
+
+  const[mobileMenu, setMobileMenu] = useState(false);
+
   return (
     <Router>
       <div>
@@ -24,11 +27,25 @@ const App = () => {
             <a href="/edit">Edit Employee</a>
           </nav>
           <nav className="mobile-nav">
-          <img src={menuIcon} className="mobile-nav-icon"alt="mobile menu icon" />
+            <img
+              src={menuIcon}
+              className="mobile-nav-icon"
+              alt="mobile menu icon"
+              onClick={()=>setMobileMenu(true)}
+            />
           </nav>
         </header>
-
-        <div className="App">
+        {(mobileMenu)?(<div className="mobile-menu">
+          <div className="mobile-links">
+          <a href="/">Home</a>
+          <a href="/directory">Directory</a>
+          <a href="/register">Register </a>
+          <a href="/edit">Edit Employee</a>
+          <div className="hideMenu"onClick={()=>setMobileMenu(false)}>close</div>
+          </div>
+        </div>): (
+          <div>
+         <div className="App">
           <Switch>
             <Route exact path="/">
               <Home />
@@ -96,6 +113,7 @@ const App = () => {
             </a>
           </section>
         </footer>
+        </div>)}
       </div>
     </Router>
   );
