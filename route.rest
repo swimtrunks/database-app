@@ -1,37 +1,3 @@
-GET HTTP://localhost:3000/employees
-###
-
-GET HTTP://localhost:3000/employees/610d78acffa47967f6510545
-
-###
-
-POST HTTP://localhost:3000/employees
-Content-Type: application/json
-
-{
-    "name": "DELETE THIS",
-    "department": "DELETE",
-    "job_title": "Sr. Software Engineer",
-    "email_address": "DELETE@email.com",
-    "image": "https://randomuser.me/api/portraits/med/men/75.jpg"
-
-}
-
-###
-
-DELETE HTTP://localhost:3000/employees/610ee0e31782bb748d95a978
-
-###
-
-PATCH HTTP://localhost:3000/employees/61112e03457ec5030d793dad
-Content-Type: application/json
-
-{
-   "name": "Lupin Isadog"
-}
-
-###
-
 GET https://randomuser.me/api/
 
 ###
