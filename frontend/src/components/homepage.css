@@ -6,6 +6,7 @@
   justify-content: center;
 }
 .frontImage {
+  padding-top: 4rem;
   width: 38rem;
   height: auto;
 }
