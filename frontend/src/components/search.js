@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Employee from "./employee2";
-import { useForm } from "react-hook-form";
+import Filter from "./filterSearch";
 import Pagination from "./pagination";
 
 const Search = () => {
-  const { register, handleSubmit } = useForm();
-
   const [employees, setEmployees] = useState([]);
+  const [filteredResults, setFilteredResults] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage] = useState(5);
 
@@ -23,29 +23,62 @@ const Search = () => {
     setLoading(false);
   };
 
-  // I want to use the form to gather the user input - take user input and store it into the object that useForm creates - onSubmit change the query parameters for the filter to search for the given results.
-  //get current posts
+  const searchData = (value) => {
+    setSearchQuery(value);
+    if (searchQuery !== "") {
+      const filteredData = employees.filter((item) => {
+        return Object.values(item)
+          .join("")
+          .toLowerCase()
+          .includes(searchQuery.toLowerCase());
+      });
+      setFilteredResults(filteredData);
+    } else {
+      setFilteredResults(employees);
+    }
+  };
+
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
   const currentCards = employees.slice(indexOfFirstCard, indexOfLastCard);
+  const filteredCards = filteredResults.slice(
+    indexOfFirstCard,
+    indexOfLastCard
+  );
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
     <div>
-      <form onSubmit={handleSubmit()} className="search-form">
-        <input type="text" {...register("query")} className="search-bar" />
-
-        <button className="searchButton" type="submit">
-          Submit
-        </button>
+      <form className="search-form">
+        <label className="search-label" htmlFor="search">search:  </label>
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Start Typing..."
+          name="search"
+          onChange={(event) => searchData(event.target.value)}
+        />
       </form>
-
-      <Employee employees={currentCards} loading={loading} key={employees._id} />
-      <Pagination
-        cardsPerPage={cardsPerPage}
-        totalCards={employees.length}
-        paginate={paginate}
-      />
+      {searchQuery.length > 1 ? (
+        <Filter
+          employees={filteredCards}
+          loading={loading}
+          key={employees._id}
+        />
+      ) : (
+        <div>
+          <Employee
+            employees={currentCards}
+            loading={loading}
+            key={employees._id}
+          />
+          <Pagination
+            cardsPerPage={cardsPerPage}
+            totalCards={employees.length}
+            paginate={paginate}
+          />
+        </div>
+      )}
     </div>
   );
 };

@@ -5,9 +5,9 @@ const Employee2 = ({employees,loading,key}) => {
     if(loading){
         return <img className="loadingLogo" src={blackLogo} alt="black logo"/>
      }
-
     return(
         <div>
+            
             {employees.map((employee) => (
                 <div key={employee._id} className="employee_data fade-in">
                 <img src= {employee.image} alt="employee"></img><br />
