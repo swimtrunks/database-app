@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Employee from "./employee2";
+import Employee from "./employee";
 import Filter from "./filterSearch";
 import Pagination from "./pagination";
 

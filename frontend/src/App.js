@@ -1,27 +1,13 @@
-import React, { useEffect, useState } from "react";
-import Employee from "./components/employee";
+import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Forms from "./components/forms";
+import Register from "./components/register";
+import Edit from "./components/editemployee";
 import Home from "./components/home";
-import whiteLogo from "./stockphotos/whitetext-mploylogo.png";
 import Search from "./components/search";
-
-//get employees from api and display them on page
+import whiteLogo from "./stockphotos/whitetext-mploylogo.png";
+import menuIcon from "./stockphotos/whitemenuicon.png"
 const App = () => {
-  const [employees, setEmployees] = useState([]);
-
-  useEffect(() => {
-    getEmployees();
-  }, []);
-
-  const getEmployees = async () => {
-    const response = await fetch("http://localhost:3000/employees/");
-    const data = await response.json();
-    console.log(data);
-    setEmployees(data);
-  };
-
   return (
     <Router>
       <div>
@@ -31,11 +17,14 @@ const App = () => {
             className="headerLogo"
             alt="mploy logo in white"
           ></img>
-          <nav>
+          <nav className="navbar">
             <a href="/">Home</a>
             <a href="/directory">Directory</a>
-            <a href="/forms">Forms </a>
-            <a href="/search">Search(Beta)</a>
+            <a href="/register">Register </a>
+            <a href="/edit">Edit Employee</a>
+          </nav>
+          <nav className="mobile-nav">
+          <img src={menuIcon} className="mobile-nav-icon"alt="mobile menu icon" />
           </nav>
         </header>
 
@@ -44,52 +33,67 @@ const App = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/forms">
-              <Forms />
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/edit">
+              <Edit />
             </Route>
             <Route path="/directory">
-            
-              {employees.map((employee) => (
-                <Employee
-                  key={employee._id}
-                  id={employee._id}
-                  name={employee.name}
-                  image={employee.image}
-                  jobtitle={employee.job_title}
-                  department={employee.department}
-                  email={employee.email_address}
-                />
-              ))}
-            </Route>
-            <Route path= "/search">
               <Search />
             </Route>
           </Switch>
         </div>
         <footer>
-        <img src={whiteLogo} alt="white version of logo in footer" />
-        
+          <img src={whiteLogo} alt="white version of logo in footer" />
+
           <section>
             <div>Our Company</div>
-            <a href="/" alt="dummy link">Home</a>
-            <a href="/" alt="dummy link">Reviews</a>
-            <a href="/" alt="dummy link">Sign Up</a>
-            <a href="/" alt="dummy link">About Us</a>
-            <a href="/" alt="dummy link">Contact Us</a>
-            <a href="/" alt="dummy link">Free Trail</a>
+            <a href="/" alt="dummy link">
+              Home
+            </a>
+            <a href="/" alt="dummy link">
+              Reviews
+            </a>
+            <a href="/" alt="dummy link">
+              Sign Up
+            </a>
+            <a href="/" alt="dummy link">
+              About Us
+            </a>
+            <a href="/" alt="dummy link">
+              Contact Us
+            </a>
+            <a href="/" alt="dummy link">
+              Free Trail
+            </a>
           </section>
           <section>
-          <div>Legal</div>
-          <a href="/" alt="dummy link">Privacy Agreement</a>
-          <a href="/" alt="dummy link">Terms of Service</a>
-          <a href="/" alt="dummy link">Business Terms of Service</a>
+            <div>Legal</div>
+            <a href="/" alt="dummy link">
+              Privacy Agreement
+            </a>
+            <a href="/" alt="dummy link">
+              Terms of Service
+            </a>
+            <a href="/" alt="dummy link">
+              Business Terms of Service
+            </a>
           </section>
           <section>
             <div>Learn</div>
-            <a href="/" alt="dummy link">Blog</a>
-            <a href="/" alt="dummy link">API</a>
-            <a href="/" alt="dummy link">Training</a>
-            <a href="/" alt="dummy link">FAQ</a>
+            <a href="/" alt="dummy link">
+              Blog
+            </a>
+            <a href="/" alt="dummy link">
+              API
+            </a>
+            <a href="/" alt="dummy link">
+              Training
+            </a>
+            <a href="/" alt="dummy link">
+              FAQ
+            </a>
           </section>
         </footer>
       </div>
