@@ -7,7 +7,6 @@ const Employee2 = ({employees,loading,key}) => {
      }
     return(
         <div>
-            
             {employees.map((employee) => (
                 <div key={employee._id} className="employee_data fade-in">
                 <img src= {employee.image} alt="employee"></img><br />
