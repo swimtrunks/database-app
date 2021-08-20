@@ -40,6 +40,7 @@ nav {
   flex-direction: row;
 }
 header {
+  z-index: 10;
   display: flex;
   width: 100%;
   margin: 0 auto;
@@ -60,8 +61,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
 }
-.mobile-links {
-  
+.mobile-links {  
   width: 10.8rem;
   padding-top: 5rem;
   margin: 0 auto;
@@ -152,9 +152,12 @@ nav a:hover {
 .search-form {
   background-color: rgb(236, 236, 236);
   border-radius: 10px;
-  padding: 1rem;
-  margin: 10px;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  
+  margin: 0;
 }
+
 
 /*forms*/
 form {
