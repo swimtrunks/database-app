@@ -97,7 +97,7 @@ npm run start
 I have configured the react script to start on port 3002. After this the page will open in your default browser.
 
 <h3>Up Next:</h3>
-1. I implememted every suggested feature from the list except for one: Testing. This is something I would like to become better with and I will be trying to learn Jest and Mocha going forward.
+1. I implememted every suggested feature from the list except for one: Testing. This is something I would like to become better with and I will be trying to learn Jest and Mocha going forward.<br />
 2. In the form section I would have liked to create an alert div that would pop up at the bottom corner, alerting the user of a successful form submit. As of right now the form simply resets. 
 
 
