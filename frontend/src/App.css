@@ -44,7 +44,6 @@ header {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  position: fixed;
   justify-content: space-around;
   color: white;
   background-color: rgb(121, 13, 13);
@@ -55,7 +54,7 @@ nav a:hover {
 }
 .mobile-menu {
   position: fixed;
-  margin-top: 5rem;
+  margin-top: 0rem;
   background-color: rgb(121, 13, 13);
   color: #fff;
   width: 100%;
@@ -152,10 +151,10 @@ nav a:hover {
 .search-form {
   background-color: rgb(236, 236, 236);
   border-radius: 10px;
-  padding-top: 6rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   
-  margin: 0;
+  margin: 1rem;
 }
 
 
@@ -190,7 +189,8 @@ h3 {
   color: rgb(121, 13, 13);
 }
 .edit-forms{
-  padding-top: 4.5rem;
+  margin-top: 1rem;
+  padding-bottom: 12rem
 }
 .register-header {
   padding-top: 5rem;
@@ -321,6 +321,9 @@ footer img {
 @media only screen and (max-width: 520px) {
   .navbar {
     display: none;
+  }
+  .header{
+    position: fixed;
   }
   .mobile-nav {
     display: flex;
