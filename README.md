@@ -1,4 +1,4 @@
-# take home assessment
+# UPDATED: take home assessment
 <p align="center">
 <img src="https://user-images.githubusercontent.com/25188844/129267229-a2aec4a7-dc3a-426c-ba6e-f4d36cc00dde.png" width="60%">
 </p>
@@ -8,19 +8,35 @@ This is a website that I built for a take home project. The assignment was to bu
 
 <h3>Features:</h3>
 
-I implemented a most of the suggested features from the criteria such as:
-
 1. Used a modern front-end framework : React.js (with hooks for the forms)
 2. Use of a modern API: Node.js
 3. Use of client-side router: Did this with React router.
 4. Implemented animation
-5. Create forms for creating, updating and deleting employees
+5. Bulit forms for creating, updating and deleting employees with required field validation
 6. Use source data from a third party person API: randomuser.me
-7. Include a README: this is it!
+7. Paginated List (front-end)
+8. Search and Filter by user input (front-end)
+9. Include a README: this is it!
 
 
-https://user-images.githubusercontent.com/25188844/129264216-c8237d88-df2e-4062-821e-75c560d2d188.mp4
 
+
+https://user-images.githubusercontent.com/25188844/130249842-6874f4e3-ebd5-428e-9cbd-b063e1542775.mp4
+
+
+
+
+<h3>Design Updates: </h3>
+I also made the site responsive with mobile stylings and a fully functioning mobile menu. I also added a new footer section with dummy links. One other slight change is that i split the "forms" page into 2 pages: "Register" and "Edit Employee" as most webpages have seperate portals for new or exisiting users. 
+<br /><br /><br />
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/25188844/130247177-b01b9cb9-c329-46d3-9d6e-9e18e13f3ecb.png" alt="mobile styling" width="70%">
+<br />
+(new mobile styles)
+</p>
+
+<br /><br />
 
 <h3>Getting Started:</h3>
 
@@ -81,16 +97,9 @@ npm run start
 I have configured the react script to start on port 3002. After this the page will open in your default browser.
 
 <h3>Up Next:</h3>
-<h4>Future Features:</h4>
-- Implement Search and Filter, possibly utilizing query strings<br />
-- More Error Handling in form submission: Using react-hook-forms adds default error handling into its functionality. <br />
-- Form Validation<br />
-- Adding Pagination to employee list.<br />
+1. I implememted every suggested feature from the list except for one: Testing. This is something I would like to become better with and I will be trying to learn Jest and Mocha going forward.
+2. In the form section I would have liked to create an alert div that would pop up at the bottom corner, alerting the user of a successful form submit. As of right now the form simply resets. 
 
-<h3>Key Takeaways:</h3>
 
-This project was really interesting because it gave me an opportunity to have more experience with server-side development. In this regard I used Node.js, Express.js and MongoDB with Mongoose. I went the MERN route because I knew Javascript and wanted to explore what it could do on the back-end. Using Mongoose and Express was also a pleasant surprise as it has many similarities to Node.js in syntax and being able to start writing middleware was also very helpful when working with building the API. Working with React is a recent development for me and I wanted to challenge myself further by trying to use it in this project to gain even more familiarity with. It was a challenge going from the traditional HTML, CSS/SASS, Javascript to the MERN stack but dealing with components, React router, JSX and imports turned out to be very helpful. The size of the project was relatively small but if I were to make anymore components I would have definitely started implementing a new folder structure to help with organization and ease of use. 
-
-Overall, I am very happy with the way this project turned out and I learned quite a bit while working on it. I look forward to improving the code and growing my skill base even further. 
 
 
