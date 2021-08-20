@@ -48,8 +48,8 @@ const Search = () => {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   return (
-    <div>
-      <form className="search-form">
+    <div className='search-page'>
+      <div className="search-form">
         <label className="search-label" htmlFor="search">search:  </label>
         <input
           type="text"
@@ -58,7 +58,7 @@ const Search = () => {
           name="search"
           onChange={(event) => searchData(event.target.value)}
         />
-      </form>
+      </div>
       {searchQuery.length > 1 ? (
         <Filter
           employees={filteredCards}
