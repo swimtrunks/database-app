@@ -105,6 +105,9 @@ nav a:hover {
   font-weight: 600;
   text-transform: uppercase;
 }
+.hideMenu:hover{
+  cursor: pointer;
+}
 
 /*employee cards*/
 .employee_data {
