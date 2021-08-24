@@ -51,13 +51,13 @@ export default function Edit() {
           <option value="name">Full Name</option>
         </select>
         <input type="text" placeholder="Update" {...register("value")}></input>
-        <button type="submit">Submit</button>
+        <button className="register-button" type="submit">Submit</button>
       </form>
 
       <form onSubmit={handleSubmit(submitDelete)}>
         <h3>Delete Employee</h3>
         <input type="text" placeholder="ID Number" {...register("id")} />
-        <button type="submit">Delete</button>
+        <button className="register-button"type="submit">Delete</button>
       </form>
     </div>
   );
