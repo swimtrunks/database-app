@@ -8,8 +8,8 @@ This is a website that I built for a take home project. The assignment was to bu
 
 <h3>Features:</h3>
 
-1. Used a modern front-end framework : React.js (with hooks for the forms)
-2. Use of a modern API: Node.js
+1. Used a modern front-end framework : React.js
+2. Use of a modern API
 3. Use of client-side router: Did this with React router.
 4. Implemented animation
 5. Bulit forms for creating, updating and deleting employees with required field validation
@@ -97,7 +97,7 @@ npm run start
 I have configured the react script to start on port 3002. After this the page will open in your default browser.
 
 <h3>Up Next:</h3>
-1. I implememted every suggested feature from the list except for one: Testing. This is something I would like to become better with and I will be trying to learn Jest and Mocha going forward.<br />
+1. I implemented every suggested feature from the list except for one: Testing. This is something I would like to become better with and I will be trying to learn Jest and Mocha going forward.<br />
 2. In the form section I would have liked to create an alert div that would pop up at the bottom corner, alerting the user of a successful form submit. As of right now the form simply resets. 
 
 
