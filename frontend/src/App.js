@@ -22,7 +22,7 @@ const App = () => {
           ></img>
           <nav className="navbar">
             <a href="/">Home</a>
-            <a href="/directory">Directory</a>
+            <a href="/directory">Directory </a>
             <a href="/register">Register </a>
             <a href="/edit">Edit Employee</a>
           </nav>
